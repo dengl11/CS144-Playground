@@ -24,7 +24,7 @@ while True:
         #Fill in start
         message = connectionSocket.recv(1024).decode()
         #Fill in end
-        print("message: {}".format(message))
+        print("message: \n{}".format(message))
         filename = message.split()[1]
         print("filename: {}".format(filename))
         f = open(filename[1:])
